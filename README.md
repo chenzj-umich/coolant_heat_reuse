@@ -73,6 +73,7 @@ coolant_heat_reuse/
   - Introduced a new `heat_transfer.py` for setting up the thermal system, and calculating the power of heat transferred.
 - **Documentation**: Added basic instructions to `README.md`.
 - **Data Visualization**: Implemented code to visualize the annual benefit w.r.t. air temperature and wind speed.
+- **Results**: Depicted `annual_benefit.png`, indicating the annual benefit with respect to ambient temperature and wind speed.
 
 ### 2025-01-02 - Version 0.3.0
 - **Feature: Weather**
@@ -80,3 +81,4 @@ coolant_heat_reuse/
 - **Feature: Main**
   - Introduced a new `main.py` for invoking functions in `heat_transfer.py` and `weather.py` to estimate seasonal power to be reused based on average temperature and wind speed returned by `weather.py`.
   - Printed out the seasonal information including days, average temperature, wind speed, and heat diffusion estimated power.
+- **Results**: Output `seasonal_info.txt`, involving the results mentioned above.
