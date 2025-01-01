@@ -17,6 +17,7 @@ This project demonstrates how to reuse heat from a cooling system in a silicon m
   - [Development Log](#development-log)
     - [2024-12-31 – Version 0.1.0](#2024-12-31--version-010)
     - [2025-01-01 – Version 0.2.0](#2025-01-01--version-020)
+    - [2025-01-02 - Version 0.3.0](#2025-01-02---version-030)
 
 ---
 
@@ -70,7 +71,12 @@ coolant_heat_reuse/
 ### 2025-01-01 – Version 0.2.0
 - **Feature: System**  
   - Introduced a new `heat_transfer.py` for setting up the thermal system, and calculating the power of heat transferred.
-  - Introduced a new `weather.py` for analyzing local weather information.
-  - Introduced a new `main.py` for invoking functions in `heat_transfer.py` and `weather.py` to estimate potential annual benefit.
 - **Documentation**: Added basic instructions to `README.md`.
 - **Data Visualization**: Implemented code to visualize the annual benefit w.r.t. air temperature and wind speed.
+
+### 2025-01-02 - Version 0.3.0
+- **Feature: Weather**
+  - Introduced a new `weather.py` for analyzing local weather information, involving average temperature, wind speed.
+- **Feature: Main**
+  - Introduced a new `main.py` for invoking functions in `heat_transfer.py` and `weather.py` to estimate seasonal power to be reused based on average temperature and wind speed returned by `weather.py`.
+  - Printed out the seasonal information including days, average temperature, wind speed, and heat diffusion estimated power.

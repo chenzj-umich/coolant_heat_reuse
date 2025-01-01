@@ -124,6 +124,10 @@ class System:
   def calculate_total_cost(self):
     self.variables["cost_annually"] = self.variables["power"] / 1000 * 24 * 365 * self.constants["cost_per_kWh"]
 
+# ------------------- Helper functions -------------------
+def get_power(temp, wind_speed):
+  sys = System(temp_air=temp, temp_water=30, wind_speed=wind_speed)
+  return sys.variables["power"]
 
 def plot_annual_cost():
   temp_air_arr = np.linspace(-20, 30, 100)
@@ -146,11 +150,10 @@ def plot_annual_cost():
   ax.set_ylabel('Wind speed')
   ax.set_zlabel('Annual cost')
 
-  # (Optional) Set a title
+  # Set a title
   ax.set_title('Annual benefit w.r.t. air temperature and wind speed')
 
   plt.show()
 
-
 if __name__ == "__main__":
-  plot_annual_cost()
+  sys = System(temp_air=-10, temp_water=30, wind_speed=2)
