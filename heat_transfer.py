@@ -8,10 +8,10 @@ class System:
     self.variables = {}
     self.constants = {}
     self.data_repo = {
-      "nu": {"directory": "data/water_properties/kinematic_viscosity_e-6.csv", "scale": 1e-6},
-      "k": {"directory": "data/water_properties/thermal_conductivity_e-3.csv", "scale": 1e-3},
-      "alpha": {"directory": "data/water_properties/thermal_diffusivity_e-6.csv", "scale": 1e-6},
-      "beta": {"directory": "data/water_properties/thermal_expansion_coefficient_e-3.csv", "scale": 1e-3}
+      "nu": {"directory": "data/air_properties/kinematic_viscosity_e-6.csv", "scale": 1e-6},
+      "k": {"directory": "data/air_properties/thermal_conductivity_e-3.csv", "scale": 1e-3},
+      "alpha": {"directory": "data/air_properties/thermal_diffusivity_e-6.csv", "scale": 1e-6},
+      "beta": {"directory": "data/air_properties/thermal_expansion_coefficient_e-3.csv", "scale": 1e-3}
     }
     # store variables in the class
     self.store_variables(temp_air, temp_water, wind_speed)
@@ -147,7 +147,7 @@ def plot_annual_cost():
   ax.set_zlabel('Annual cost')
 
   # (Optional) Set a title
-  ax.set_title('Annual cost as a function of air temperature and wind speed')
+  ax.set_title('Annual benefit w.r.t. air temperature and wind speed')
 
   plt.show()
 

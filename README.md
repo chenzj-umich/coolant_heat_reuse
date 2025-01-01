@@ -13,7 +13,7 @@ This project demonstrates how to reuse heat from a cooling system in a silicon m
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Key Features](#key-features)
-  - [System Diagram](#system-diagram)
+  - [Files \& Folders](#files--folders)
   - [Development Log](#development-log)
     - [2024-12-31 – Version 0.1.0](#2024-12-31--version-010)
     - [2025-01-01 – Version 0.2.0](#2025-01-01--version-020)
@@ -43,7 +43,7 @@ This project demonstrates how to reuse heat from a cooling system in a silicon m
 
 ---
 
-## System Diagram
+## Files & Folders
 
 Below is a simplified flow diagram :
 coolant_heat_reuse/
