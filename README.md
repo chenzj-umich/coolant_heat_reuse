@@ -18,6 +18,7 @@ This project demonstrates how to reuse heat from a cooling system in a silicon m
     - [2024-12-31 – Version 0.1.0](#2024-12-31--version-010)
     - [2025-01-01 – Version 0.2.0](#2025-01-01--version-020)
     - [2025-01-02 - Version 0.3.0](#2025-01-02---version-030)
+    - [2025-01-02 - Version 0.3.1](#2025-01-02---version-031)
 
 ---
 
@@ -82,3 +83,6 @@ coolant_heat_reuse/
   - Introduced a new `main.py` for invoking functions in `heat_transfer.py` and `weather.py` to estimate seasonal power to be reused based on average temperature and wind speed returned by `weather.py`.
   - Printed out the seasonal information including days, average temperature, wind speed, and heat diffusion estimated power.
 - **Results**: Output `seasonal_info.txt`, involving the results mentioned above.
+
+### 2025-01-02 - Version 0.3.1
+- **Bug Revised**: unit of output revised.

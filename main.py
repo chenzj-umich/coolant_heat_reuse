@@ -17,7 +17,7 @@ def info_seasonal():
     print(f"{seasons[i]}:\t\t{days}\t\tdays")
     print(f"Temperature:\t{temp_air:.2f}\t\t°C")
     print(f"Wind speed:\t{wind_speed:.2f}\t\tm/s")
-    print(f"Power:\t\t{power:.2e}\tkW\n")
+    print(f"Energy:\t\t{power*24/1000:.2e}\tkWh\n")
 
 
 if __name__ == "__main__":
